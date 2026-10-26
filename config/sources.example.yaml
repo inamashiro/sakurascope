@@ -1,0 +1,34 @@
+# EXAMPLE / MOCK sources for local development and tests.
+# These entries are NOT real recruitment claims.
+# Replace URLs with official public pages you are allowed to access.
+#
+# Status labels used by this project:
+# - research_topic_may_match: topic keywords may align; NOT admission proof
+# - public_admission_info_found: a public notice exists; still needs verification
+# - eligibility_confirmed: only after human verification against official text
+# - needs_university_confirmation: always assume until proven otherwise
+
+sources:
+  - source_id: mock-univ-public-health-page
+    source_name: "[MOCK] Example University Public Health Page"
+    source_url: "https://example.invalid/mock/public-health/"
+    source_type: graduate_school_site
+    collection_strategy: html
+    enabled: false
+    notes: "Simulated fixture source. Disabled by default. Do not treat as real data."
+
+  - source_id: mock-lab-rss
+    source_name: "[MOCK] Example Lab Announcements RSS"
+    source_url: "https://example.invalid/mock/lab/feed.xml"
+    source_type: official_rss
+    collection_strategy: rss
+    enabled: false
+    notes: "Simulated RSS source for offline tests only."
+
+  - source_id: mock-admission-pdf
+    source_name: "[MOCK] Example Admission PDF"
+    source_url: "https://example.invalid/mock/admission.pdf"
+    source_type: public_pdf
+    collection_strategy: pdf
+    enabled: false
+    notes: "Simulated PDF source. OCR is intentionally out of scope for v1."

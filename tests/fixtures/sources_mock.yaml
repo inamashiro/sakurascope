@@ -1,0 +1,26 @@
+# MOCK sources for offline httpx MockTransport tests only.
+# URLs use fixtures.sakurascope.test — never hit real university sites.
+sources:
+  - source_id: mock-html-public-health
+    source_name: "[MOCK] Fixture HTML Public Health Page"
+    source_url: "https://fixtures.sakurascope.test/public-health/"
+    source_type: graduate_school_site
+    collection_strategy: html
+    enabled: true
+    notes: "Simulated HTML source for offline tests."
+
+  - source_id: mock-rss-lab
+    source_name: "[MOCK] Fixture Lab RSS"
+    source_url: "https://fixtures.sakurascope.test/lab/feed.xml"
+    source_type: official_rss
+    collection_strategy: rss
+    enabled: true
+    notes: "Simulated RSS source for offline tests."
+
+  - source_id: mock-html-forbidden
+    source_name: "[MOCK] Fixture 403 Page"
+    source_url: "https://fixtures.sakurascope.test/forbidden/"
+    source_type: other
+    collection_strategy: html
+    enabled: true
+    notes: "Simulates access restriction; must be recorded as fetch failure."

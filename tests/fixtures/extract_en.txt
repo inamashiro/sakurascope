@@ -1,0 +1,10 @@
+[MOCK English sample] Example University Graduate School of Medicine
+
+This is simulated offline fixture text for SakuraScope tests. Not a real recruitment notice.
+
+Our lab works on epidemiology, bioinformatics, and medical AI methods for public health surveillance.
+We also explore biomedical data science projects.
+
+Lab homepage update only. This page does not describe open positions, entry requirements, or due dates.
+
+Researchers interested in these topics may browse other official pages later — this sentence is not a recruitment notice.

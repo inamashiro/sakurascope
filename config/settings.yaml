@@ -1,0 +1,39 @@
+# SakuraScope application settings (Phase 2).
+# Paths are relative to the project root unless absolute.
+
+app:
+  name: SakuraScope
+  environment: development
+
+paths:
+  data_dir: data/runtime
+  log_dir: logs
+  sources_file: config/sources.example.yaml
+  research_areas_file: config/research_areas.yaml
+  reports_dir: reports
+  database_filename: sakurascope.db
+
+logging:
+  level: INFO
+  # Console format is intentionally simple for beginners.
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+
+http:
+  user_agent: "SakuraScope/0.2 (+https://github.com/example/sakurascope; research-opportunity-radar; contact=local-user)"
+  timeout_seconds: 30
+  max_retries: 2
+  min_request_interval_seconds: 1.0
+  max_response_bytes: 5000000
+  respect_robots_txt: true
+
+ai:
+  # Rule-based extraction is the default. External AI is opt-in only.
+  # To enable: set enabled=true, provider=openai_compatible, AND
+  # export SAKURASCOPE_AI_API_KEY (never commit the key).
+  enabled: false
+  provider: none
+  base_url: https://api.openai.com/v1
+  model: gpt-4o-mini
+  timeout_seconds: 60
+  temperature: 0
+  max_text_chars: 12000

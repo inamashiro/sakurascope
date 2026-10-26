@@ -1,0 +1,36 @@
+# Configurable research-area dictionary for filtering (Phase 4).
+# Weights affect TOPIC RELEVANCE only — never admission probability.
+#
+# Users may add Chinese / Japanese / English keywords freely.
+
+areas:
+  - name: Public Health
+    weight: 1.0
+    keywords: ["public health", "公衆衛生", "公共卫生"]
+  - name: Epidemiology
+    weight: 1.0
+    keywords: ["epidemiology", "疫学", "流行病学"]
+  - name: Biostatistics
+    weight: 0.9
+    keywords: ["biostatistics", "生物統計", "生物统计"]
+  - name: Bioinformatics
+    weight: 1.0
+    keywords: ["bioinformatics", "バイオインフォマティクス", "生物信息"]
+  - name: Life Sciences
+    weight: 0.8
+    keywords: ["life sciences", "life science", "生命科学"]
+  - name: Biomedical Data Science
+    weight: 1.0
+    keywords: ["biomedical data", "medical data science", "医学データ科学", "医学数据科学"]
+  - name: Medical AI
+    weight: 1.0
+    keywords: ["medical ai", "医学ai", "医療ai", "医学人工智能"]
+  - name: Medical Engineering
+    weight: 0.9
+    keywords: ["medical engineering", "biomedical engineering", "医学工学", "生物医学工程"]
+  - name: Basic Medicine
+    weight: 0.8
+    keywords: ["basic medicine", "基礎医学", "基础医学"]
+
+# Minimum topic relevance score to keep an opportunity when --require-topic-match is used.
+min_topic_score: 0.5

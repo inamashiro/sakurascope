@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>【MOCK】例示研究室お知らせ</title>
+    <link>https://fixtures.sakurascope.test/lab/</link>
+    <description>Offline fixture feed — not real admissions.</description>
+    <item>
+      <title>研究紹介ページを更新しました（模擬）</title>
+      <link>https://fixtures.sakurascope.test/lab/news/1</link>
+      <guid>mock-entry-1</guid>
+      <pubDate>Mon, 01 Sep 2025 09:00:00 GMT</pubDate>
+      <description>疫学とバイオインフォマティクスに関する紹介文（MOCK）。募集開始を意味しません。</description>
+    </item>
+    <item>
+      <title>公開セミナー案内（模擬）</title>
+      <link>https://fixtures.sakurascope.test/lab/news/2</link>
+      <guid>mock-entry-2</guid>
+      <pubDate>Wed, 15 Oct 2025 12:00:00 GMT</pubDate>
+      <description>公開セミナーのお知らせです。入学資格の確定情報ではありません。</description>
+    </item>
+    <!-- Duplicate guid should be ignored -->
+    <item>
+      <title>重複エントリ</title>
+      <link>https://fixtures.sakurascope.test/lab/news/1-dup</link>
+      <guid>mock-entry-1</guid>
+      <description>should be skipped</description>
+    </item>
+  </channel>
+</rss>

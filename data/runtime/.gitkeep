@@ -1,0 +1,3 @@
+# Runtime SQLite / snapshots will live here in later phases.
+# This directory is gitignored except for this placeholder pattern note.
+# Do not commit real databases.

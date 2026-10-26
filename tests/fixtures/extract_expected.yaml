@@ -1,0 +1,44 @@
+# Expected rule-based extraction outcomes for MOCK fixtures.
+# These are test oracles — not real admissions facts.
+
+ja:
+  fixture: extract_ja.txt
+  expect:
+    research_topic_may_match: true
+    has_public_admission_language: true
+    research_areas_include:
+      - Public Health
+      - Epidemiology
+      - Biostatistics
+    application_deadline: "2026-05-15"
+    review_status: public_admission_info_found
+    institution_name_contains: 大学
+    must_not_claim_eligibility_confirmed: true
+
+en:
+  fixture: extract_en.txt
+  expect:
+    research_topic_may_match: true
+    has_public_admission_language: false
+    research_areas_include:
+      - Epidemiology
+      - Bioinformatics
+      - Medical AI
+      - Public Health
+      - Biomedical Data Science
+    application_deadline: null
+    review_status: research_topic_may_match
+    must_not_claim_eligibility_confirmed: true
+
+zh:
+  fixture: extract_zh.txt
+  expect:
+    research_topic_may_match: true
+    has_public_admission_language: true
+    research_areas_include:
+      - Epidemiology
+      - Bioinformatics
+      - Medical AI
+    application_deadline: "2026-06-30"
+    review_status: public_admission_info_found
+    must_not_claim_eligibility_confirmed: true
