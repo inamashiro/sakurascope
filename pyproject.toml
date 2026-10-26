@@ -53,10 +53,9 @@ dev = [
 sakurascope = "sakurascope.cli:main"
 
 [project.urls]
-# Replace with your real remote before publishing (see docs/PUBLISHING.md).
-Homepage = "https://github.com/YOUR_ORG/sakurascope"
-Documentation = "https://github.com/YOUR_ORG/sakurascope#readme"
-Changelog = "https://github.com/YOUR_ORG/sakurascope/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/inamashiro/sakurascope"
+Documentation = "https://github.com/inamashiro/sakurascope#readme"
+Changelog = "https://github.com/inamashiro/sakurascope/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/sakurascope"]
